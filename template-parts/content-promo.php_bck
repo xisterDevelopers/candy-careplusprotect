@@ -1,0 +1,102 @@
+<?php
+/**
+ * Template Name: Promo page
+ */
+
+get_header();
+?>
+    <section class="promo">
+        <div class="container-fluid">
+            <div class="row bg no-gutter">
+                <div class="col-xs-12 col-sm-6">
+                    <img class="img-responsive" src="https://careplusprotect.com/wp-content/themes/wp-bootstrap-starter/inc/assets/img/promo-fr/care-plus-protect-product-fr.png" alt="" />
+                </div>
+                <div class="col-xs-12 col-sm-6 text-center">
+                    <div class="content dx">
+                        <img class="img-responsive center" src="https://careplusprotect.com/wp-content/themes/wp-bootstrap-starter/inc/assets/img/promo-fr/promo-icon.png" alt="Care + Protect">
+                        <h3>Nous vous offrons 50% de réduction!</h3>
+                        <p>Rosières vous offre 50%(*) de remise immédiate pour l’achat  du nettoyant 3 en 1 (code produit 35601768), qui contient 12 sachets  pour 1 année complète de protection de votre appareil.</p>
+                        <a href="" class="cta">Acheter maintenant</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="second-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <h4>Comment participer</h4>
+                    </div>
+                    <div class="col-xs-12  text-center ctn-item">
+                        <div class="item">
+                            <img class="img-responsive" src="https://careplusprotect.com/wp-content/themes/wp-bootstrap-starter/inc/assets/img/promo-fr/careplus-protect-icon-1.png" alt="">
+                            <p>Cliquez ici pour acheter le détartrant, dégraissant et désinfectant 3 en 1</p>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="https://careplusprotect.com/wp-content/themes/wp-bootstrap-starter/inc/assets/img/promo-fr/careplus-protect-icon-2.png" alt="">
+                            <p>Entrez le code promotionnel indiqué sur votre échantillon lors de la phase de paiement </p>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="https://careplusprotect.com/wp-content/themes/wp-bootstrap-starter/inc/assets/img/promo-fr/careplus-protect-icon-3.png" alt="">
+                            <p>50% de réduction  sur l’achat</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 text-center">
+                        <a href="" class="cta white">Acheter maintenant</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="third-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <div class="embed-area">
+                            <div class="embed-container">
+                                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/mSQIYBk6jKM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row editorial-content">
+                <div class="col-sm-12 col-md-6 no-gutter">
+                    <div class="col-sm-12 hidden-md hidden-lg">
+                        <div class="col-xs-12">
+                            <img src="<?= get_field('editorial_image','option') ?>" class="img-responsive" alt="care-protect-product-img">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="inner-content">
+                            <h2><?= get_field('editorial_title','option') ?></h2>
+                            <h2 class="subtitle"><?= get_field('editorial_subtitle','option') ?></h2>
+                            <p><?= get_field('editorial_description','option') ?></p>
+                            <p class="gray"><?= get_field('editorial_description_gray','option') ?></p>
+                            <a class="cta blue" href="<?= get_field('editorial_cta_link','option') ?>" target="<?= get_field('editorial_cta_target','option') ?>"><?= get_field('editorial_cta_label','option') ?></a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6 hidden-sm hidden-xs">
+                    <div class="col-xs-12">
+                        <img src="<?= get_field('editorial_image','option') ?>" class="img-responsive" alt="care-protect-product-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>Offre valable en France métropolitaine (Corse comprise) sur l’achat, du 01/09/2020 au 01/09/2022 inclus sur le site https://careplusprotect.com/rosierespromo, d’un produit 3en1 anti-calcaire, dégraissant, nettoyant (12 sachets) de Care + Protect de référen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <link rel="stylesheet" href="https://careplusprotect.com/wp-content/themes/wp-bootstrap-starter/inc/assets/css/promo.css">
+<?php
+
+get_footer();

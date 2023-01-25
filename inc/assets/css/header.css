@@ -1,0 +1,481 @@
+header {
+    background: #0094d6;
+    min-height: 145px;
+}
+
+header .search-bar {
+    background: #5bcafc;
+    padding: 10px 0;
+    max-height: 60px;
+    text-align:center; 
+}
+header .search-bar input[type="search"] {
+    background-color: transparent !important;
+    border: 0;
+    border-bottom: 1px solid #FFF;
+    border-radius: 0;
+    box-shadow: none;
+    color: #FFF;
+    display: inline-block !important;
+    width: auto;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+header .search-bar form label {
+    margin-right: 25px;
+}
+header .search-bar form label i {
+    vertical-align: middle;
+    font-size: 18px;
+    margin-right: 14px;
+}
+.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #FFF;
+}
+.form-control::-moz-placeholder { /* Firefox 19+ */
+  color: #FFF;
+}
+.form-control:-ms-input-placeholder { /* IE 10+ */
+  color: #FFF;
+}
+.form-control:-moz-placeholder { /* Firefox 18- */
+  color: #FFF;
+}
+header .navbar {
+    margin: 0;
+    padding: 20px 0;
+    background: transparent;
+    border: 0;
+    color: #FFF;
+}
+
+header .navbar-default .navbar-nav > li > a {
+    color: #FFF;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border:0px;
+}
+
+
+.navbar > .container .navbar-brand {
+    padding: 0;
+    position: absolute;
+}
+
+.navbar-nav > li {
+    float: none;
+    display: inline-block;
+}
+
+.navbar-brand > img {
+    position: relative;
+    z-index: 1;
+    top:3px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    background: transparent !important;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0 15px;
+    border-bottom: 1px solid transparent;
+    padding-left: 0;
+    padding-right: 0;
+}
+.navbar-default .navbar-nav > li > a:first-letter {
+    text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li.active > a, .navbar-default .navbar-nav > li.active > a:hover {
+    color: #FFF;
+    border-bottom: 1px solid;
+    /*padding-bottom: 10px;*/
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background: transparent;
+}
+
+.navbar.small {
+    position: fixed;
+    top: -100px;
+    width: 100%;
+    z-index: 9;
+    min-height: 60px;
+    max-height: 60px;
+    border-radius: 0;
+    border-bottom: 1px solid #000;
+    -webkit-transition: all .4s cubic-bezier(0.22, 0.02, 0.05, 0.76); 
+    -moz-transition: all .4s cubic-bezier(0.22, 0.02, 0.05, 0.76); 
+    -ms-transition: all .4s cubic-bezier(0.22, 0.02, 0.05, 0.76); 
+    -o-transition: all .4s cubic-bezier(0.22, 0.02, 0.05, 0.76); 
+    transition: all .4s cubic-bezier(0.22, 0.02, 0.05, 0.76);
+}
+.navbar.small.displayed {
+    top: 0px;
+}
+.navbar.small:before {
+    display: none;
+}
+
+.navbar.small .navbar-nav > li > a {
+    padding: 11px 0px 6px 0;
+}
+
+.nav.navbar-nav {
+    margin: 0 auto;
+    display: block;
+    float: none !important;
+    text-align: center;
+}
+
+#ctn-header{
+    position: relative;
+}
+.ctn-select-lang{
+    position: absolute;
+    right: 20px;
+    top: 15%;
+}
+.ctn-select-lang img{
+    display: inline-block;
+    width:35px;
+}
+.ctn-select-lang span{
+    font-size: 16px;
+    color: #FFF;
+    padding-left: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: normal;
+    vertical-align: text-top;
+}
+
+.ctn-select-lang{
+    position: absolute;
+    right: 20px;
+    top: 7px;
+}
+
+.sub-menu {
+    padding: 25px 150px;
+    background: #FFF;
+    top: -100%;
+    position: absolute;
+    left: 0;
+    right:0;
+    -webkit-transition: all .4s cubic-bezier(0.22, 0.02, 0.05, 0.76);
+    -moz-transition: all .4s cubic-bezier(0.22, 0.02, 0.05, 0.76);
+    -ms-transition: all .4s cubic-bezier(0.22, 0.02, 0.05, 0.76);
+    -o-transition: all .4s cubic-bezier(0.22, 0.02, 0.05, 0.76);
+    transition: all .4s cubic-bezier(0.22, 0.02, 0.05, 0.76);
+    overflow-y: hidden;
+}
+.sub-menu.displayed {
+    top:0;
+}
+.menu-details > div {
+    opacity: 0;
+    position: relative;
+    bottom: -40px;
+    -webkit-transition: all .4s cubic-bezier(0.22, 0.02, 0.05, 0.76);
+    -moz-transition: all .4s cubic-bezier(0.22, 0.02, 0.05, 0.76);
+    -ms-transition: all .4s cubic-bezier(0.22, 0.02, 0.05, 0.76);
+    -o-transition: all .4s cubic-bezier(0.22, 0.02, 0.05, 0.76);
+    transition: all .4s cubic-bezier(0.22, 0.02, 0.05, 0.76);
+}
+.menu-details .first-col {
+    transition-delay: 0s;
+}
+.menu-details .second-col {
+    transition-delay: .2s;
+}
+.menu-details .third-col {
+    transition-delay: .4s;
+}
+.menu-details .forth-row {
+    transition-delay: .8s;
+}
+
+.menu-details .forth-row {
+    text-align: center;
+    padding: 50px 0 0 0;
+}
+
+.menu-details .forth-row a {
+    color: #FFF;
+    background: #e01f26;
+    border: 0;
+}
+.menu-details > div.toClose {
+    transition-delay: 0s;
+}
+.menu-details > div.displayed {
+    opacity: 1;
+    bottom: 0;
+}
+.sub-menu.open-not-small {
+    position: absolute;
+    top: 0;
+}
+
+#sub-menu-container.background-black {
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+#sub-menu-container.background-black.small {
+    position: fixed;
+    top: 60px;
+    z-index: 10;
+}
+
+#sub-menu-container, .menu-details {
+    display: none;
+}
+
+.sub-menu h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.sub-menu ul li {
+    list-style: none;
+    padding: 0;
+    padding-bottom: 7px;
+}
+
+.sub-menu ul {
+    padding: 0;
+}
+
+.sub-menu ul li a {
+    font-size: 16px;
+    color: #000;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.sub-menu ul li a:hover {
+    padding-left:10px;
+}
+.sub-menu .item h5 {
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 0px 15px 0;
+    font-weight: normal;
+    text-align: center;
+}
+
+.sub-menu .item {
+    border: 1px solid black;
+}
+
+.sub-menu .item img {
+    margin: 50px auto;
+}
+
+.sub-menu .item a {
+    text-align: center;
+    display: block;
+    border-top: 1px solid black;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 13px;
+    padding: 5px 0;
+    line-height: 34px;
+}
+
+.sub-menu .third-col div {
+    padding-left: 0;
+}
+
+.sub-menu .third-col div:last-child {
+}
+
+/* 404 */
+.page-404 {
+    text-align: center;
+}
+
+.page-404 .reel {
+    margin-bottom: 50px;
+}
+
+.logo-small {
+    margin: 0;
+}
+.logo-small, .navbar.small .logo_image {
+    display: none;
+}
+
+.navbar-brand .logo_image{
+}
+.navbar.small .logo-small {
+    display: block;
+    width: 40px;
+}
+
+@media screen and (max-width: 1199px) {
+    .navbar > .container .navbar-brand {
+        left: 0;
+        top: 10%;
+    }
+    
+    .navbar-brand .logo_image {
+        max-width: 100px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .navbar > .container .navbar-brand {
+        left: 20px;
+        top: 0;
+    }
+    .navbar-brand .logo_image {
+        max-width: 60px;
+    }
+    .navbar-default .navbar-nav > li > a {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        max-height: 100%;
+        min-height: auto;
+    }
+    .navbar:before {
+        display: none;
+    }
+    .ctn-select-lang{
+        display: none;
+    }
+    .sub-menu,.sub-menu.open-not-small {
+        padding: 25px;
+        left: 0;
+        transform: none;
+        transform: unset;
+        top: 0;
+        position: relative;
+        border: 0;
+        text-align: left;
+    }
+
+    #sub-menu-container.background-black {
+        position: relative;
+        background: transparent;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        padding-top: 30px;
+        padding-right: 0;
+        text-align: left;
+        padding-bottom: 0;
+    }
+
+    .logo-small {
+        display: block;
+        width: 40% !important;
+    }
+
+    .logo_image {
+        display: none !important;
+    }
+
+    .navbar-nav > li {
+        display: block;
+    }
+
+    .nav.navbar-nav {
+        margin-bottom: 25px;
+    }
+
+    .sub-menu .third-col div {
+        margin-bottom: 25px;
+        max-width: 320px;
+        margin: 25px auto;
+        display: block;
+        float: none;
+        padding-right: 0;
+        width: 100%;
+    }
+}
+.btn-default:hover {
+    background: rgba(255, 255, 255, .15);
+    color: #FFF;
+    border-color: #FFF;
+}
+
+.page-template-country header {
+    min-height: 90px;
+}
+.page-template-country .navbar-toggle {
+    display: none;
+}
+.page-template-country .ctn-select-lang {
+    display: none;
+}
+.country-select {
+    padding: 60px 0;
+}
+.flags {
+    margin-bottom: 50px;
+}
+
+.flags .flag {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.country-select h1 {
+    margin-bottom: 0;
+    font-size: 45px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    line-height: 50px;
+    color: #0094d6;
+}
+
+.country-select h2 {
+    font-size: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    color: #707070;
+    line-height: 35px;
+}
+#menu-main-menu > li:last-child {
+    display: none;
+}
+@media screen and (max-width:767px) {
+    .country-select h1 {
+        font-size: 33px;
+        line-height: 45px;
+    }
+    .country-select h2 {
+        font-size: 27px;
+        line-height: 35px;
+    }
+    .navbar-collapse {
+        box-shadow: none;
+    }
+    #menu-main-menu > li:last-child {
+        display: block;
+    }
+}

@@ -1,0 +1,151 @@
+footer {
+    margin-bottom: 50px;
+    border-top: 1px solid #1599d5;
+    padding-top:90px;
+}
+footer .logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer .logo img {
+    max-width: 125px;
+}
+
+footer .menu-list ul {
+    padding: 0;
+    list-style: none;
+    column-gap: 9px;
+    column-count: 1;
+}
+
+footer .menu-list ul li a {
+    color: #333;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+footer .ctn-quality h4,footer .ctn-quality h5{
+    display: inline-block;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    margin:0 auto;
+}
+footer .ctn-quality .inner{
+    display: inline-block;
+    width: 80%;
+    margin-left: 2%;
+}
+footer .ctn-quality{
+    margin-top:8px;
+}
+footer .ctn-quality h4{
+    font-size: 23px;
+    color:#0094d6;
+}
+footer .ctn-quality h5{
+    display: inline-block;
+    font-size: 14px;
+    color:#636466;
+    line-height: initial;
+    font-weight: 900;
+}
+footer .ctn-quality img{
+    vertical-align: top;
+    display: inline-block;
+}
+footer .ctn-footer{
+    display: flex;
+}
+footer .ctn-list{
+    width:100%;
+}
+footer .ctn-logo{
+    max-width: 100%;
+    margin-left: 4%;
+    top: -35px;
+    position: relative;
+}
+
+footer .ctn-list.menu-list{
+    width: 90%;
+    display: flex;
+    padding: 0px 20%;
+}
+
+footer .ctn-list.menu-list ul{
+    max-width: 100%;
+    margin: 0 50px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px){
+    footer .ctn-list.menu-list ul{
+        margin-left:auto;
+    }
+    footer .ctn-list.menu-list{
+        width:90%;
+    }
+    footer .ctn-logo{
+        margin-left:0;
+    }
+}
+
+@media screen and (max-width: 767px){
+    footer {
+        padding-top: 0px;
+    }
+    footer .ctn-footer {
+        flex-direction: column;
+    }
+    footer .ctn-list.menu-list {
+        width: 100%;
+        order: 1;
+        padding: 0 15px;
+    }
+    footer .ctn-logo {
+        max-width: 100%;
+        margin-left: 0;
+        top: 0;
+        position: relative;
+        justify-content: center;
+        display: flex;
+        order: 2;
+        margin-top: 50px;
+    }
+    footer .ctn-logo img{
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        
+    }
+    footer .ctn-list.menu-list {
+        width: 100%;
+        order: 1;
+    }
+    footer .ctn-list.menu-list ul {
+        max-width: 90%;
+        margin: 0 auto;
+        margin-left: auto;
+        margin-top:50px;
+    }
+    footer .ctn-list.menu-list ul li {
+        padding-bottom: 10px;
+    }
+    footer .ctn-quality{
+        order: 2;
+        justify-content: center;
+        width: 100%;
+        display: flex;
+        max-width: 100%;
+        margin-top: 40px;
+    }
+    footer .ctn-quality .inner{
+        flex-direction: column;
+    }
+    footer .ctn-quality .inner{
+        margin-left:5%;
+    }
+    
+}
